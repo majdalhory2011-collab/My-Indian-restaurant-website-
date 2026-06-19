@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>
+resereving 
+</title>
+<style>
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+
+.reservation {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input {
+  background: #222;
+  color: white;
+}
+
+button {
+  background: orange;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkorange;
+}
+</style>
+</head>
+<body>
+<section class="reservation">
+<h1>Book a table</h1>
+<form action="file:///C:/Users/enass/Downloads/a.html">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="date" name="date"  placeorder="Date" required>
+<input type="time" name="time" placeholder="Time" required>
+<input type="number" name="guests" placeholder="Number of Guests" required>
+<button type="submit"> Reserve Now</button>
+
+</form>
+</section>
+    <script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // حط المفتاح تبعك هنا
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(function() {
+        alert("Message sent successfully!");
+      }, function(error) {
+        alert("Failed to send message");
+      });
+  });
+</script>
+</body>
+</html>

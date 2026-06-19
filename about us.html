@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<title>about us</title>
+<style>
+#third{margin-right: -70px;padding-right: -70px;text-align: center;margin-top: -570px;padding-top: -570px;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f4ef;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 0;
+}
+
+body > div {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Layout: two columns for the timeline */
+body {
+  display: flex;
+  justify-content: center;
+}
+
+body > div:first-of-type,
+#third {
+  width: 50%;
+  padding: 20px 40px;
+}
+
+/* Remove the old negative margins */
+#third {
+  margin: 0;
+  text-align: left;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.4rem;
+  margin: 25px 0 10px;
+  color: #b23a2a;
+  position: relative;
+  padding-left: 28px;
+}
+
+/* Timeline dots and line */
+h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #b23a2a;
+  transform: translateY(-50%);
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 100%;
+  width: 2px;
+  height: 40px;
+  background: #e0c9a6;
+}
+
+/* Last heading: no line below */
+h1:last-of-type::after {
+  display: none;
+}
+
+/* Paragraphs as neat bullet-like lines */
+p {
+  margin-left: 28px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+p::before {
+  content: "• ";
+  color: #555;
+}
+
+/* Small spacing between sections */
+br {
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+<div>
+<h1> <b>2010-The Dream Starts</b></h1>
+<p>	•	A young chef traveled across India</p>
+<p>  •	Learned traditional recipes from different regions</p>
+<p>•	Fell in love with Indian spices and cooking techniques</p>
+<h1>2013-First Kitchen</h1>
+<p>•Opened a small home-based kitchen</p>
+<p>•Served only a few dishes like:</p>
+<p>•Butter Chicken</p>
+<p>	•Biryani</p>
+<p>	•Naan </p>
+<h1>2016- First Restaurant Opens</h1>
+<p>	•Officially opened the first restaurant</p>
+<p>•Designed with traditional Indian decor</p>
+<p>•Focused on authentic taste and fresh ingredients</p>
+</div>
+<div id="third">
+<h1>2019-Growing Popularity</h1>
+<p>•Became one of the most loved Indian restaurants in the area</p>
+<p>•Introduced new dishes:</p>
+<p>•Tandoori Chicken</p>
+<p>•Paneer Masala </p>
+<p>•Started receiving excellent customer reviews </p>
+<br>
+<h1>2022-Expansion</h1>
+<p>•	Opened a second branch</p>
+<p>	•	Added online reservations and delivery services</p>
+<p>	•	Built a loyal community of customers</p>
+<h1>2025-today</h1>
+
+<p>	•	A well-known brand for authentic Indian cuisine</p>
+	<p>•	Combining tradition with modern dining experience</p>
+<p>	•	Continuing to innovate while staying true to our roots</p>
+</div>
+
+
+</body>
+</html> 
